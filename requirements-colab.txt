@@ -1,0 +1,12 @@
+# Colab GPU runtime. Tested against Colab's Python 3.11 + T4.
+# numpy<2: insightface/onnxruntime still break on numpy 2.x in places.
+numpy<2
+opencv-python-headless>=4.8
+onnx>=1.15
+onnxruntime-gpu>=1.19,<2
+insightface>=0.7.3
+gradio>=4.44
+pillow
+tqdm
+imageio-ffmpeg
+huggingface-hub
