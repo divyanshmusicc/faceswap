@@ -3,3 +3,8 @@ __pycache__/
 .venv/
 venv/
 .ipynb_checkpoints/
+# never commit API tokens or keys
+*token*.txt
+kaggle.json
+access_token
+.kaggle/

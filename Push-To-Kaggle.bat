@@ -7,9 +7,9 @@ setlocal
 cd /d "%~dp0"
 where kaggle >nul 2>nul
 if errorlevel 1 (
-  echo [faceswap] 'kaggle' CLI not found. Run:  pip install kaggle
-  echo [faceswap] Then download kaggle.json from https://www.kaggle.com/settings
-  echo [faceswap] and save it to %%USERPROFILE%%\.kaggle\kaggle.json
+  echo [faceswap] 'kaggle' CLI not found. Run:  pip install -U kaggle
+  echo [faceswap] Then create an API token at https://www.kaggle.com/settings
+  echo [faceswap] and save it to %%USERPROFILE%%\.kaggle\access_token
   pause
   exit /b 1
 )
